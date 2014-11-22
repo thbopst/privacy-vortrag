@@ -1,0 +1,98 @@
+\documentclass[final]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{default}
+\usepackage[ngerman]{babel}
+
+\usepackage{datetime}
+
+%\usepackage{caption,subcaption}
+\usepackage{natbib}
+
+% \usepackage{overpic}
+\usepackage{floatflt}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{bm}
+
+\usepackage{array}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage{listings}
+\lstset{language=Python,numbers=left,escapeinside={[}{]}}
+
+\usepackage{graphicx}
+
+\usepackage{todonotes}
+\presetkeys{todonotes}{inline,size=\tiny}{}
+
+\makeatletter
+\newenvironment{myitemize}{%
+   \setlength{\topsep}{0pt}
+   \setlength{\partopsep}{0pt}
+   \renewcommand*{\@listi}{\leftmargin\leftmargini \parsep\z@ \topsep\z@ \itemsep\z@}
+   \let\@listI\@listi
+   \itemize
+}{\enditemize}
+\makeatother
+
+\newcommand{\executeIfFileNewer}[3]{%
+  \ifnum\pdfstrcmp{\pdffilemoddate{#1}}{\pdffilemoddate{#2}} > 0%
+    \immediate\write18{#3}%
+  \fi%
+}
+
+\graphicspath{{Figures/}}
+
+\newcommand{\inputSVG} [2][]{%
+  \executeIfFileNewer{Figures/Inkscape/#2.svg}{Figures/#2.pdf}{%
+    inkscape -z -D --file=Figures/Inkscape/#2.svg --export-pdf=Figures/#2.pdf --export-latex --export-area-drawing}%
+  #1%
+  \input{Figures/#2.pdf_tex}%
+}
+
+\usetheme{Antibes}
+\usecolortheme{beaver}
+
+\setbeamercovered{transparent}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+% \setbeamercolor{title}{fg=red!80!black,bg=red!20!white}
+
+% \usefonttheme[onlylarge]{structuresmallcapsserif}
+% \usefonttheme[onlysmall]{structurebold}
+
+\title{Privacy is sexy}
+
+\author[P. Schladebach, T. Bopst, S. Köhler]{Paul Schladebach, Thomas Bopst, Steffen Köhler}
+\newdateformat{writtenDate}{\THEDAY. \monthname[\THEMONTH]~\THEYEAR} % d. MONAT yyyy
+\date{\writtenDate\formatdate{01}{01}{1900}}
+\institute{HTWG Konstanz}
+
+\begin{document}
+\bibliographystyle{apalike}
+
+\frame{\titlepage}
+\frame{
+  \frametitle{Inhaltsverzeichnis}
+  \tableofcontents
+}
+
+\input{00_fragen}
+\input{01_einleitung}
+\input{02_web}
+\input{03_instantmessaging}
+\input{04_email}
+
+%\section{Quellen}
+
+%\begin{frame}
+%  \nocite{*}
+%  \tiny
+%  \frametitle{Quellen}
+%  \bibliography{references}
+%\end{frame}
+
+\end{document}

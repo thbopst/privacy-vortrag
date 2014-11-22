@@ -1,0 +1,16 @@
+*.pdf
+*.pdf_tex
+*.aux
+*.bbl
+*.nav
+*.snm
+*.gz
+*.backup
+*.vbr
+*.swp
+*.vrb
+*.log
+*.out
+*.toc
+*.blg
+.texpadtmp/
