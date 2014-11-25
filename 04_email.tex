@@ -1,1 +1,60 @@
 \section{E-Mail-Verschlüsselung}
+
+\begin{frame}
+  \frametitle{Probleme symmetrischer Verschlüsselung}
+  \begin{itemize}
+    \item Verteilung der Schlüssel
+    \item Anzahl benötigter Schlüssel
+    \begin{itemize}
+      \item 2 Personen $\rightarrow$ 1 Schlüssel
+      \item 3 Personen $\rightarrow$ 3 Schlüssel
+      \item 4 Personen $\rightarrow$ 6 Schlüssel
+      \item 100 Personen $\rightarrow$ 4950 Schlüssel
+      \item n Personen $\rightarrow$ $\frac{n(n-1)}{2}$ Schlüssel
+    \end{itemize}
+    \item TODO: Graf
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+   \frametitle{Asymmetrische Verschlüsselung} 
+   \begin{itemize}
+     \item Schaubild
+   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Keyserver}
+  \begin{itemize}
+    \item Screenshots
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Identitätsprüfung}
+  \begin{itemize}
+    \item Keine Echtheitsgarantie für Keys auf Keyserver
+    \item ``Web of Trust''
+    \item TODO: Schaubild (ger. graph)
+    \note{Key nur signieren wenn WIRKLICH geprüft}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Signaturen}
+  \begin{itemize}
+    \item Schaubild Signaturschema
+    \item Schaubild Signatur generieren + prüfen mit pub/sec key
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Signierte E-Mail}
+  \begin{itemize}
+    \item Garantiert Echtheit des Absenders
+    \item Keine Verschlüsselung!
+    \note{Unterschriebener Vertrag}
+    \item Kann aber mit Verschlüsselung kombiniert werden
+  \end{itemize}
+\end{frame}

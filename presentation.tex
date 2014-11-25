@@ -1,4 +1,4 @@
-\documentclass[final]{beamer}
+\documentclass[]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{default}
@@ -52,12 +52,12 @@
   \input{Figures/#2.pdf_tex}%
 }
 
-\usetheme{Antibes}
-\usecolortheme{beaver}
+\usetheme{Boadilla}
+\usecolortheme{whale}
 
 \setbeamercovered{transparent}
 \beamertemplatenavigationsymbolsempty
-\setbeamertemplate{footline}[frame number]
+% \setbeamertemplate{footline}[frame number]
 
 % \setbeamercolor{title}{fg=red!80!black,bg=red!20!white}
 
@@ -66,10 +66,9 @@
 
 \title{Privacy is sexy}
 
-\author[P. Schladebach, T. Bopst, S. Köhler]{Paul Schladebach, Thomas Bopst, Steffen Köhler}
+\author[M. Niethammer, P. Schladebach, T. Bopst, S. Köhler]{Paul Schladebach, Thomas Bopst, Steffen Köhler}
 \newdateformat{writtenDate}{\THEDAY. \monthname[\THEMONTH]~\THEYEAR} % d. MONAT yyyy
 \date{\writtenDate\formatdate{01}{01}{1900}}
-\institute{HTWG Konstanz}
 
 \begin{document}
 \bibliographystyle{apalike}
