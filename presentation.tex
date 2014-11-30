@@ -43,13 +43,13 @@
   \fi%
 }
 
-\graphicspath{{Figures/}}
+\graphicspath{{figures/pdf/}}
 
 \newcommand{\inputSVG} [2][]{%
-  \executeIfFileNewer{Figures/Inkscape/#2.svg}{Figures/#2.pdf}{%
-    inkscape -z -D --file=Figures/Inkscape/#2.svg --export-pdf=Figures/#2.pdf --export-latex --export-area-drawing}%
+  \executeIfFileNewer{figures/#2.svg}{figures/pdf/#2.pdf}{%
+    inkscape -z -D --file=figures/#2.svg --export-pdf=figures/pdf/#2.pdf --export-latex --export-area-drawing}%
   #1%
-  \input{Figures/#2.pdf_tex}%
+  \input{figures/pdf/#2.pdf_tex}%
 }
 
 \usetheme{Antibes}
