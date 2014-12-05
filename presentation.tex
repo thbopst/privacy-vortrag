@@ -17,6 +17,7 @@
 
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{enumerate}
 
 \usepackage{amsmath}
 \usepackage{listings}
@@ -43,7 +44,7 @@
   \fi%
 }
 
-\graphicspath{{figures/pdf/}}
+\graphicspath{{figures/pdf/},{figures/}}
 
 \newcommand{\inputSVG} [2][]{%
   \executeIfFileNewer{figures/#2.svg}{figures/pdf/#2.pdf}{%

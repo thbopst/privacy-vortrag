@@ -10,6 +10,7 @@
   \begin{itemize}
     \item Verteilung der Schlüssel
     \item Anzahl benötigter Schlüssel
+    \pause
     \begin{itemize}
       \item 2 Personen $\rightarrow$ 1 Schlüssel
       \item 3 Personen $\rightarrow$ 3 Schlüssel
@@ -33,7 +34,7 @@
     \begin{column}{0.5\textwidth}
       \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_public_key_cryptography_de}
     \end{column}
-   \end{columns}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -71,4 +72,34 @@
     \note{Unterschriebener Vertrag}
     \item Kann aber mit Verschlüsselung kombiniert werden
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Wie kann ich E-Mail Verschlüsselung verwenden?}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item OpenPGP
+        \item Phil Zimmermann (1991)
+        \item Integration in E-Mail Client
+        \begin{itemize}
+          \item Thunderbird: Enigmail
+          \item Mail: GPGTools
+          \item Outlook: ---
+        \end{itemize}
+      \end{itemize}
+      \center \includegraphics[width=\textwidth]{Enigmail-Screenshot}\\
+      \todo{Screenshot für Apfeltool}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+          Konfiguration:
+      \begin{enumerate}
+        \item Schlüsselpaar generieren
+        \item Widerrufszertifikat erzeugen
+        \item Öffentlichen Schlüssel auf Schlüsselserver laden
+        \item Öffentliche Schlüssel von Freunden/Kollegen \ldots{} herunterladen
+      \end{enumerate}
+    \end{column}
+  \end{columns}
+
 \end{frame}
