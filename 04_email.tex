@@ -6,6 +6,39 @@
 }
 
 \begin{frame}
+  \frametitle{PGP}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+	\item \textbf{P}retty \textbf{G}ood \textbf{P}rivacy
+        \item OpenPGP als offener Standard
+        \item Phil Zimmermann (1991)
+        \item Ver- und Entschlüsselung
+        \item Digitale Signatur
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+          Integration in E-Mail Client
+        \begin{itemize}
+          \item Thunderbird: Enigmail
+          \item Mail: GPGTools
+          \item Outlook: ---
+        \end{itemize}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{PGP}
+  \center
+   Thunderbird\\
+   \includegraphics[width=\textwidth]{Enigmail-Screenshot}\\
+   Apple Mail\\
+   \includegraphics[width=\textwidth]{AppleMail-Screenshot}
+\end{frame}
+
+\begin{frame}
   \frametitle{Probleme symmetrischer Verschlüsselung}
   \begin{itemize}
     \item Verteilung der Schlüssel
@@ -41,11 +74,24 @@
   \frametitle{Asymmetrische Verschlüsselung}
   \framesubtitle{Schema}
   \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_public_key_scheme_de}
+  \todo{Menschen Namen geben!}
 \end{frame}
 
 \begin{frame}
   \frametitle{Schlüsselserver (Keyserver)}
-  \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_keyserver_de}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+       \item Schlüssel können nicht gelöscht werden
+       \item Schlüssel können wiederrufen werden
+      \end{itemize}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \center \inputSVG[\def\svgscale{0.15}]{Orange_blue_keyserver_de}
+    \end{column}
+  \end{columns}
+  
 \end{frame}
 
 \begin{frame}
@@ -76,30 +122,13 @@
 
 \begin{frame}
   \frametitle{Wie kann ich E-Mail Verschlüsselung verwenden?}
-  \begin{columns}[c]
-    \begin{column}{0.5\textwidth}
-      \begin{itemize}
-        \item OpenPGP
-        \item Phil Zimmermann (1991)
-        \item Integration in E-Mail Client
-        \begin{itemize}
-          \item Thunderbird: Enigmail
-          \item Mail: GPGTools
-          \item Outlook: ---
-        \end{itemize}
-      \end{itemize}
-      \center \includegraphics[width=\textwidth]{Enigmail-Screenshot}\\
-      \todo{Screenshot für Apfeltool}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-          Konfiguration:
+  
+      Konfiguration:
       \begin{enumerate}
         \item Schlüsselpaar generieren
         \item Widerrufszertifikat erzeugen
         \item Öffentlichen Schlüssel auf Schlüsselserver laden
-        \item Öffentliche Schlüssel von Freunden/Kollegen \ldots{} herunterladen
+        \item Öffentliche Schlüssel von Bekannten herunterladen
       \end{enumerate}
-    \end{column}
-  \end{columns}
 
 \end{frame}
