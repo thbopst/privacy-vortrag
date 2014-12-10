@@ -15,3 +15,6 @@
 *.blg
 .texpadtmp/
 privacyvortrag.kilepr
+
+# Mac OS X
+.DS_Store
