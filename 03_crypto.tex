@@ -1,0 +1,86 @@
+\section{Grundlagen Kryptographie}
+
+\frame{%
+  \frametitle{Inhaltsverzeichnis}
+  \tableofcontents[currentsection]
+}
+
+\begin{frame}
+  \frametitle{Übertragungsweg von Nachrichten}
+  %\todo[inline]{Schaubild Übertragung von Nachrichten (über Server)}
+  \center \inputSVG[\def\svgscale{0.25}]{Orange_blue_message_transportation_de}
+  \note{Analogie: Brief/Postkarte mit Adresse}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Transportwegverschlüsselung / Ende-zu-Ende Verschlüsselung}
+  Transportwegverschlüsselung
+  \begin{center}
+    \inputSVG[\def\svgscale{0.25}]{Orange_blue_message_transportation_security_de}
+  \end{center}
+
+
+  Ende-zu-Ende Verschlüsselung
+  \center \inputSVG[\def\svgscale{0.25}]{Orange_blue_message_end_to_end_de}
+%  \todo[inline]{Schaubild vgl. Ende-zu-Ende / Transportweg}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Transportweg- und Ende-zu-Ende Verschlüsselung}
+  \begin{center}
+    \inputSVG[\def\svgscale{0.25}]{Orange_blue_message_transportation_end2end_de}
+  \end{center}
+  \begin{itemize}
+    \item Meta-Daten auf dem Transportweg geschützt
+    \item Provider kann nicht mitlesen
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Symmetrische Verschlüsselung}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_symmetric_cryptography_de}
+    \end{column}
+  \end{columns}
+  %\todo[inline]{Schaubild Verschlüsselung (symm)}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Probleme symmetrischer Verschlüsselung}
+  \begin{itemize}
+    \item Verteilung der Schlüssel
+    \item Anzahl benötigter Schlüssel
+    \pause
+    \begin{itemize}
+      \item 2 Personen $\rightarrow$ 1 Schlüssel
+      \item 3 Personen $\rightarrow$ 3 Schlüssel
+      \item 4 Personen $\rightarrow$ 6 Schlüssel
+      \item 100 Personen $\rightarrow$ 4950 Schlüssel
+      \item n Personen $\rightarrow$ $\frac{n(n-1)}{2}$ Schlüssel
+    \end{itemize}
+    \todo[inline]{Evtl auf Tafel rechnen}
+    \todo[inline]{Graph}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Asymmetrische Verschlüsselung}
+  \framesubtitle{Grundlagen}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_public_private_keygeneration_de}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_public_key_cryptography_de}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Asymmetrische Verschlüsselung}
+  \framesubtitle{Schema}
+  \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_public_key_scheme_de}
+  \todo{Menschen Namen geben!}
+\end{frame}
