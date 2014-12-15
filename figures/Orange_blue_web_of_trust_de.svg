@@ -23,11 +23,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="727.44156"
-     inkscape:cy="307.77044"
+     inkscape:cx="467.7299"
+     inkscape:cy="307.27728"
      inkscape:document-units="px"
      inkscape:current-layer="g4120"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1031"
      inkscape:window-x="0"
@@ -1417,6 +1417,39 @@
                id="path5898" />
           </g>
         </g>
+        <text
+           xml:space="preserve"
+           style="font-size:38.82060242px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="210.71086"
+           y="2056.4607"
+           id="text3197"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3199"
+             x="210.71086"
+             y="2056.4607">Anna</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:38.82060242px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="1011.2524"
+           y="2057.0579"
+           id="text3201"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3203"
+             x="1011.2524"
+             y="2057.0579">Bernd</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:38.82060242px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="610.98163"
+           y="2619.2266"
+           id="text3205"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="610.98163"
+             y="2619.2266"
+             id="tspan3209">Chris</tspan></text>
       </g>
       <g
          id="g4183"

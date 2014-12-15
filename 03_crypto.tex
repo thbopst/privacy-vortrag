@@ -7,8 +7,13 @@
 
 \begin{frame}
   \frametitle{Übertragungsweg von Nachrichten}
-  %\todo[inline]{Schaubild Übertragung von Nachrichten (über Server)}
   \center \inputSVG[\def\svgscale{0.25}]{Orange_blue_message_transportation_de}
+  \begin{itemize}
+    \item Nachrichten werden an Server geschickt
+    \item von dort aus weiter an Empfänger geleitet
+    \item $\rightarrow$ Serverbetreiber kann mitlesen
+  \end{itemize}
+
   \note{Analogie: Brief/Postkarte mit Adresse}
 \end{frame}
 
@@ -39,11 +44,7 @@
 
 \begin{frame}
   \frametitle{Symmetrische Verschlüsselung}
-  \begin{columns}[c]
-    \begin{column}{0.5\textwidth}
-      \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_symmetric_cryptography_de}
-    \end{column}
-  \end{columns}
+  \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_symmetric_scheme_de}
   %\todo[inline]{Schaubild Verschlüsselung (symm)}
 \end{frame}
 
@@ -60,8 +61,6 @@
       \item 100 Personen $\rightarrow$ 4950 Schlüssel
       \item n Personen $\rightarrow$ $\frac{n(n-1)}{2}$ Schlüssel
     \end{itemize}
-    \todo[inline]{Evtl auf Tafel rechnen}
-    \todo[inline]{Graph}
   \end{itemize}
 \end{frame}
 
@@ -82,5 +81,4 @@
   \frametitle{Asymmetrische Verschlüsselung}
   \framesubtitle{Schema}
   \center \inputSVG[\def\svgscale{0.2}]{Orange_blue_public_key_scheme_de}
-  \todo{Menschen Namen geben!}
 \end{frame}
