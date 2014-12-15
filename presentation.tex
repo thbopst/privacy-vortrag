@@ -53,6 +53,14 @@
   \input{figures/pdf/#2.pdf_tex}%
 }
 
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
 \usetheme{Antibes}
 \usecolortheme{dolphin}
 
