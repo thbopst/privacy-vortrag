@@ -9,7 +9,9 @@ presentation.pdf
 ### 8
 - Disconnect, TrackMeNot
 ### 10
- -> Postkarte
+Orange = Geheim
+Blau = Öffentlich
+-> Postkarte
 ### 11
 Transportweg -> Serverbetreiber kann mitlesen ~ Brief in Umschlag
 	- gMail
@@ -21,3 +23,10 @@ End2End -> Metadaten unverschlüsselt ~ Anschrift/Absender...
 	~ Umschlag addresiert an Empfänger
 ### 14
 Beispiel an Tafel
+### 15
+~ Briefkasten
+### 16
+Gesamte Kommunikation öffentlich (inkl Schlüsselaustausch!)
+Öffentl. Schlüssel gehört Anna
+### 19
+Man-in-the-Middle
