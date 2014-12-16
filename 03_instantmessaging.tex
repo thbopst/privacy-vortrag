@@ -26,6 +26,22 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Perfect Forward Secrecy}
+  Problem:
+  \begin{itemize}
+    \item Was passiert wenn der Schlüssel geklaut wird?
+    \pause
+    \item $rightarrow$ Alle Nachrichten können entschlüsselt werden
+    \item $rightarrow$ Auch alte Nachrichten, die der Angreifer gespeichert hat
+  \end{itemize}
+  \pause
+  Lösung:
+  \begin{itemize}
+    \item Sitzungsschlüssel
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{Messaging App Scorecard der \textbf{E}lectronic \textbf{F}rontier \textbf{F}oundation (EFF)}
   \framesubtitle{Auszug aus \url{https://www.eff.org/secure-messaging-scorecard}}
   \center
@@ -37,7 +53,7 @@
   \Wider[4.5em]{
   \begin{tabular}{@{} m{1.8cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{1.7cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{1.5cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{1.2cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{1.9cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{1.0cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{1.37cm}@{\hspace{1mm}} >{\centering\arraybackslash}m{0.6cm}@{\hspace{1mm}} @{}}
     \toprule \\
-     & Transportweg\-verschlüs\-selung & Ende-zu-Ende verschlüsselt & Iden\-ti\-täts\-prü\-fung & Nachrichten sicher wenn Schlüssel geklaut & Open Source & Design dokumentiert & Audit \\
+     & Transportweg\-verschlüs\-selung & Ende-zu-Ende verschlüsselt & Iden\-ti\-täts\-prü\-fung & Nachrichten sicher wenn Schlüssel geklaut & Open Source & Sicherheits\-konzept dokumentiert & Audit \\
     \midrule \\
     Facebook chat 	& \myCheck & \myCross & \myCross & \myCross & \myCross & \myCross & \myCheck \\
     Google Hangouts 	& \myCheck & \myCross & \myCross & \myCross & \myCross & \myCross & \myCheck \\
