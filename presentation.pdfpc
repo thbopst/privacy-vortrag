@@ -13,27 +13,36 @@ Orange = Geheim
 Blau = Öffentlich
 -> Postkarte
 ### 11
-Transportweg -> Serverbetreiber kann mitlesen ~ Brief in Umschlag
-	- gMail
+End2End -> Metadaten unverschlüsselt ~ Brief - Anschrift/Absender...
 
-End2End -> Metadaten unverschlüsselt ~ Anschrift/Absender...
+Transportweg -> Serverbetreiber kann mitlesen ~ Postkarte in Umschlag
+									 Provider packt um
+	- gMail
 ### 12
-~ Brief in Umschlag
+~ Brief in weiterem Umschlag
 	~ Umschlag addresiert an Provider
 	~ Umschlag addresiert an Empfänger
 ### 14
 Beispiel an Tafel
+
+Verschobene Parabel ( 1/2 | -1/8 )
 ### 15
-~ Briefkasten
+Unterschied zu symm enc?
 ### 16
 Gesamte Kommunikation öffentlich (inkl Schlüsselaustausch!)
 Öffentl. Schlüssel gehört Anna
+
+~ Briefkasten
 ### 19
 Man-in-the-Middle
 ### 20
 Alle Nachrichten (auch alte)
 ### 21
 Threema - (fast) alle Plattformen
+### 23
+Ronald L. Rivest, Adi Shamir und Leonard M. Adleman
+### 25
+Warum sollte man den Schlüssel widerrufen?
 ### 27
 Auch zur Signatur von anderen Keys
 
